@@ -10,10 +10,11 @@ export const router = createBrowserRouter(
       path: "/",
       element: <DeckNav />,
       children: [
-        { index: true, element: <Navigate to="/browse" replace /> },
+        { index: true, element: <Navigate to="browse" replace /> },
         { path: "browse", element: <BrowsePage /> },
         { path: "quiz", element: <QuizPage /> },
         { path: "progress", element: <ProgressPage /> },
+        { path: "*", element: <Navigate to="browse" replace /> },
       ],
     },
   ],

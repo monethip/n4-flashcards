@@ -3,9 +3,9 @@ import { BookOpen, ListChecks, Trophy } from "lucide-react";
 import { VOCAB } from "@/shared/data/vocab";
 
 const tabs = [
-  { to: "/browse", label: "Browse", Icon: BookOpen },
-  { to: "/quiz", label: "Quiz", Icon: ListChecks },
-  { to: "/progress", label: "Progress", Icon: Trophy },
+  { to: "browse", label: "Browse", Icon: BookOpen },
+  { to: "quiz", label: "Quiz", Icon: ListChecks },
+  { to: "progress", label: "Progress", Icon: Trophy },
 ];
 
 export function DeckNav() {
